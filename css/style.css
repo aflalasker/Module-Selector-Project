@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+html, body {
+
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.intro {
+
+	height:100%;
+	width: 100%;
+	margin:auto;
+	background-image: url(../assets/sommerset-house.jpg);
+	display: table;
+	top:0;
+	background-size: cover;
+}
+
+.intro .inner {
+	display:table-cell;
+	vertical-align: middle;
+	width:100%;
+	max-width: none;
+}
+
+.content {
+	max-width: 600px
+	margin:0 auto;
+	text-align: center;
+	padding-bottom: 30% 
+	padding-left:20%;
+}
+
+.content h1 {
+	font-family: 'Yantramanav', sans-serif;
+	font-size: 600%;
+	font-weight: 100;
+	color: #E1EFE9;
+	line-height: 70%;
+}
+
+.btn {
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 135%;
+	font-weight: 400%;
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: solid white;
+	padding: 10px 20px;
+	border-radius: 9px;
+	transition: all 0.5s;
+
+}
+
+.btn:hover {
+
+	color: grey;
+	border: solid grey 2px;
+
+}
+
+.dropdown-content a:hover {
+
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 100%;
+	font-weight: 400%;
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: solid white;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+	font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding: 10px 55px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+
+	.content {
+		padding-bottom: 30%;
+	}
+
+	.content h1 {
+		font-size: 450%;
+	}
+
+	.btn {
+		font-size: 130%;
+		padding: 9px 17px
+	}
+
+	.dropdown-content a {
+		font-size: 130%;
+		padding: 9px 17px
+	}
+
+}
+@media screen and (max-width: 768px) {
+
+	.content {
+		padding-bottom: 40%;
+	}
+
+	.content h1 {
+		font-size: 300%;
+	}
+
+	.btn {
+		font-size: 110%;
+		padding: 9px 17px
+	}
+
+	.dropdown-content a {
+		font-size: 110%;
+		padding: 9px 17px
+	}
+
+}
+@media screen and (max-width: 480px) {
+
+	.content {
+		padding-bottom: 50%;
+	}
+
+	.content h1 {
+		font-size: 250%;
+		padding: 6px 14px;
+	}
+
+	.btn {
+		font-size: 110%;
+		padding: 9px 17px
+	}
+	.dropdown-content a {
+		padding:12px 17px;
+	}
+	
+}
