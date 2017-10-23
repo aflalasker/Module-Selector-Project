@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+
+a {
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+	transform: translate(-10%, -10%);
+	width: 125px;
+	height: 60px;
+	background: #00468C;
+	text-transform: uppercase;
+	text-align: center;
+	
+
+	line-height: 30px;
+	color: white;
+	text-decoration: none;
+	font-size: : 10px;
+	font-family: 'Yantramanav';
+	letter-spacing: 4px;
+
+}
+
+a:before,
+a:after,
+span:before,
+span:after
+{
+
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #00468C;
+	transition: : 1s;
+	mix-blend-mode: hue;
+
+
+}
+
+a:before {
+
+	top: -2px;
+	left: -2px;
+
+}
+
+a:after {
+
+	top: -2px;
+	right: -2px;
+}
+
+span:before {
+
+	bottom: -2px;
+	left: -2px;
+
+}
+
+span:after {
+
+	bottom:-2px;
+	right: -2px;
+
+}
+
+a:hover:before,
+a:hover:after,
+a:hover span:before,
+a:hover span:after
+{
+
+	width: calc(125px / 2);
+	height: calc(60px / 2);
+	transition: 0.5s;
+
+}
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+
+	a {
+		
+		position: relative;
+		right: 0%;
+		bottom: 0%;
+		left:0;
+		
+		width: 100%;
+		height: 5%;
+		text-align: center;
+		line-height: 30px;
+		margin-left: 10%;
+		padding-top: 2px;
+		display: block;
+
+
+	}
+
+	a:hover:before,
+	a:hover:after,
+	a:hover span:before,
+	a:hover span:after
+	{
+
+		width: calc(100% / 2);
+		height: calc(5% / 2);
+		transition: 0.5s;
+	}
+
+	a {
+
+		background: lightgreen;
+	}
+
+	a:hover {
+
+		background: darkgreen;
+		border-radius: 20px;
+		transition: 1s;
+	}
+
+	a:before,
+	a:after,
+	span:before,
+	span:after
+	{
+		background: darkgreen;
+		transition: : 1s;
+		mix-blend-mode: hue;
+		
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
