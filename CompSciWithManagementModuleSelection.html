@@ -2,89 +2,145 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<link rel="stylesheet" type="text/css" href="css/generalFormDesign.css">
+<link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
+<link rel="stylesheet" type="text/css" href="css/iconButtonTICK.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@6.11.0/dist/sweetalert2.min.js"></script>
+<script src="js/popup.js" type="text/javascript">
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <script src="js/sweetalert2.js" type="text/javascript"></script>
+
 <title>CompSci with Management Module Selection</title>
 </head>
 <body>
 
+
+	<div class = "banner">
+
+		<img class="banner-image" src="assets/KCL-header-image.png">
+
+	</div>
+
 	<form>
 
-		<h2>Core Full Year Modules</h2>
+		<h3>Core Full Year Modules</h3>
+<input type="checkbox" id="00" name="FULL_YEAR" value="AMS" checked disabled="">
+	 <label for="00"> 6CCSPRJ - Individual Project</label>
 
-		<p>6CCSPRJ - Individual Project</p>
+		<h3>Semester 1</h3>
 
-		<h2>Semester 1</h2>
+		<h3>Compulsory Module</h3>
 
-		<h2>Compulsory Module</h2>
-		<ul>
-			<li>6SSMN325 - Business Strategy (this module is run by the
+		<input type="checkbox" id="0" name="coreSEM1" value="coreSEM1" checked disabled="">
+	 <label for="0"> 6SSMN325 - Business Strategy (this module is run by the
 				King's Business School, please consult the King's Business School
-				handbook for further information)</li>
-		</ul>
+				handbook for further information)</label><br>
 
-		<p class="optionls">
-			and choose <b>two</b> of:
-		</p>
+		<p>Choose <b>two</b> of : </p>
+	
+	 <input type="checkbox" id="1" name="SEM1" value="AMS">
+	 <label for="1"> Agents and Multi-Agent Systems</label>
 
-		<input type="checkbox" name="6CCS3AMS Agents and Multi-Agent Systems"
-			value="AMS"> Agents and Multi-Agent Systems<br> <input
-			type="checkbox" name="6CCS3CFL Compilers and Formal Languages"
-			value="CFL"> Compilers and Formal Languages<br> <input
-			type="checkbox" name="6CCS3COV Computer Vision" value="COV">
-		Computer Vision<br> <input type="checkbox"
-			name="6CCS3CSL Computer Science Logic" value="CSL"> Computer
-		Science Logic<br> <input type="checkbox"
-			name="6CCS3HCI Human Computer Interaction" value="HCI"> Human
-		Computer Interaction<br> <input type="checkbox"
-			name="6CCS3VER Formal Verification" value="VER"> Formal
-		Verification<br> <input type="checkbox"
-			name="6CCS3WSN Algorithms for the World Wide Web and Social Networks"
-			value="WSN"> Algorithms for the World Wide Web and Social
-		Networks<br> <input type="checkbox"
-			name="6CCS3SMT Software Measurement and Testing" value="SMT">
-		Software Measurement and Testing<br> <input type="checkbox"
-			name="6CCS3GRS Computer Graphics Systems" value="GRS">
-		Computer Graphics Systems<br> <input type="checkbox"
-			name="6CCS3PAL Parallel Algorithms" value="PAL"> Parallel
-		Algorithms<br> <input type="checkbox"
-			name="6CCS3AIN Artificial Intelligence" value="AIN">
-		Artificial Intelligence<br> <input type="checkbox"
-			name="6CCS3CIS Cryptography and Information Security" value="CIS">
-		Cryptography and Information Security<br> <input type="checkbox"
-			name="6CCS3AIP Artificial Intelligence Planning" value="AIP">
-		Artificial Intelligence Planning<br>
+	 <input type="checkbox" id="2" name="SEM1" value="CFL"><label for="2">Compilers and Formal Languages</label>
 
-		<h2>Semester 2</h2>
+	 <input type="checkbox" id="3" name="SEM1"	value="COV"><label for="3">Computer Vision</label>
 
-		<h2>Compulsory Module</h2>
+	 <input type="checkbox" id="4" name="SEM1" value="CSL"><label for="4">Computer Science Logic</label>
 
-		<ul>
-			<li>6SSMN339 - Human Resource Management (this module is run by
+	 <input type="checkbox" id="5" name="SEM1" value="HCI"><label for="5">Human Computer Interaction</label>
+
+	 <input type="checkbox" id="6" name="SEM1" value="VER"><label for="6">Formal Verification</label>
+
+	 <input type="checkbox" id="7" name="SEM1" value="WSN"><label for="7">Algorithms for the World Wide Web and Social Networks</label>
+
+	 <input type="checkbox" id="8" name="SEM1" value="SMT"><label for="8"> Software Measurement and Testing</label>
+
+	 <input type="checkbox" id="9" name="SEM1" value="GRS"><label for="9">Computer Graphics Systems</label>
+
+	 <input type="checkbox" id="10" name="SEM1" value="PAL"><label for="10">Parallel Algorithms</label>
+
+	 <input type="checkbox" id="11" name="SEM1" value="AIN"><label for="11">Artificial Intelligence</label>
+
+	 <input type="checkbox" id="12" name="SEM1" value="CIS"><label for="12"> Cryptography and Information Security</label>
+
+	 <input type="checkbox" id="13" name="SEM1" value="AIP"><label for="13">Artificial Intelligence Planning</label>
+
+		<h3>Semester 2</h3>
+
+		<h3>Compulsory Module</h3>
+
+		<input type="checkbox" id="0" name="coreSEM2" value="coreSEM2" checked disabled="">
+	 	<label for="0">6SSMN339 - Human Resource Management (this module is run by
 				the King's Business School, please consult the King's Business
-				School handbook for further information)</li>
-		</ul>
+				School handbook for further information)</label>
 
-		<p class="optionls">
-			and choose <b>two</b> of:
-		</p>
-		<input type="checkbox" name="6CCS3DSM Distributed Systems" value="DSM">
-		Distributed Systems<br> <input type="checkbox"
-			name="6CCS3COM Computational Models" value="COM">
-		Computational Models<br> <input type="checkbox"
-			name="6CCS3SAD Software Architecture and Design" value="SAD">
-		Software Architecture and Design<br> <input type="checkbox"
-			name="6CCS3SIA Software Engineering of Internet Applications"
-			value="SIA"> Software Engineering of Internet Applications<br>
-		<input type="checkbox" name="6CCS3NSE Network Security" value="NSE">
-		Network Security<br> <input type="checkbox"
-			name="6CCS3OME Optimisation Methods" value="OME">
-		Optimisation Methods<br> <input type="checkbox"
-			name="6CCS3PRE Pattern Recognition" value="PRE"> Pattern
-		Recognition<br> <input type="checkbox"
-			name="6CCS3TSP Text Searching and Processing" value="TSP">
-		Text Searching and Processing<br>
+		<p>Choose <b>two</b> of : </p>
+	 <input type="checkbox" id="14" name="SEM2" value="DSM"><label for="14">Distributed Systems</label>
 
-		<button>Submit</button>
+	 <input type="checkbox" id="15" name="SEM2" value="COM"><label for="15">Computational Models</label>
+
+	 <input type="checkbox" id="16" name="SEM2" value="SAD"><label for="16">Software Architecture and Design</label>
+
+	 <input type="checkbox" id="17" name="SEM2" value="SIA"><label for="17">Software Engineering of Internet Applications</label>
+
+	 <input type="checkbox" id="18" name="SEM2" value="NSE"><label for="18">Network Security</label>
+
+	 <input type="checkbox" id="19" name="SEM2" value="OME"><label for="19">Optimisation Methods</label>
+
+	 <input type="checkbox" id="20" name="SEM2" value="PRE"><label for="20">Pattern Recognition</label>
+
+	 <input type="checkbox" id="21" name="SEM2" value="TSP"><label for="21">Text Searching and Processing</label>
+	 
+	 <br>
 	</form>
+
+	<a onclick='confirmation()'>
+	<div class="button"></div></a>
+
+ 
+<script type="text/javascript">
+
+
+	$(document).ready(function() {
+		$("input[name='SEM1']").change(function() {
+			var maxAllowed = 2;
+				var count = $("input[name='SEM1']:checked").length;
+					if (count > maxAllowed) {
+						$(this).prop("checked", "");
+							
+							errorCheck();
+				}
+	});
+});
+
+</script>
+
+<script type="text/javascript">
+
+
+	$(document).ready(function() {
+		$("input[name='SEM2']").change(function() {
+			var maxAllowed = 2;
+				var count = $("input[name='SEM2']:checked").length;
+					if (count > maxAllowed) {
+						$(this).prop("checked", "");
+							
+							errorCheck();
+				}
+	});
+});
+
+</script>
 
 </body>
 </html>
