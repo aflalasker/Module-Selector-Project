@@ -21,7 +21,7 @@ body {
 	margin: auto;
 }
 
-h2 {
+h3 {
 
 	text-align: center;
 	background-color: #00478E;
@@ -33,3 +33,5 @@ input, label {
 	cursor: pointer;
 
 }
+
+
